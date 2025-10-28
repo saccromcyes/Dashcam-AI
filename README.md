@@ -1,2 +1,3 @@
 # Dashcam AI
-A local desktop AI dashcam that watches the user’s screen and microphone, understands repeated workflows, and then automates them. It mirrors recent research on Computer-Using Agents, where an AI processes raw screen pixels and control actions to perform tasks
+Screen Capture: Continuously take screenshots or video frames of the desktop. For example, in Python, you can use PyAutoGUI to grab the screen (pyautogui.screenshot() returns a PIL image). On a 1920×1080 display, this is ~100 ms per full screenshot. You can capture either a full screen or a region. These frames serve as the visual input for understanding UI events.
+Audio Capture: Record microphone input in real time (e.g., with sounddevice or PyAudio). One can buffer short audio clips (e.g., 1–2 seconds) or record continuously. These snippets will be transcribed to text so spoken commands like “open Excel” are understood.
