@@ -1,0 +1,8 @@
+pyautogui
+sounddevice
+scipy
+pytesseract
+transformers
+torch
+vosk
+Pillow
